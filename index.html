@@ -37,7 +37,6 @@
 	<body>
 
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
@@ -47,7 +46,7 @@
 					<h3 style="text-align: right;">...but I'm not sure.</h3>
 					<br>
 					<p>
-						<small>A talk about words by <a href="http://mochimachine.org/">Jennifer Wong</a><br><a href="https://github.com/jennz0r">jennz0r</a> / <a href="https://twitter.com/mybluewristband">@mybluewristband</a></small>
+						<small>A talk about words by <a href="http://mochimachine.org/">Jennifer Wong</a><br><a href="https://github.com/jennz0r" target="_blank">jennz0r</a> / <a href="https://twitter.com/mybluewristband" target="_blank">@mybluewristband</a></small>
 					</p>
 				</section>
 
@@ -59,15 +58,36 @@
 						</p>
 					</section>
 					<section data-background-image="img/wasteland.png">
-            <h2 style="color:white; text-shadow: 1px 1px 5px #333;">(Human) Wasteland</h2>
+            <a href="http://mochimachine.org/wasteland/" target="_blank"><h2 style="color:white; text-shadow: 1px 1px 5px #333;">(Human) Wasteland</h2></a>
             <h3 style="color:white; text-shadow: 1px 1px 5px #333;">aka The Poop Map</h3>
 					</section>
 					<section data-background-image="img/developers.png">
-						<h2 style="color:white; text-shadow: 1px 1px 5px #333;">Developers Developers</h2>
+						<a href="http://developersdevelope.rs/" target="_blank"><h2 style="color:white; text-shadow: 1px 1px 5px #333;">Developers Developers</h2></a>
 					</section>
-          <section>
+          <section data-background-image="img/coding.gif">
+            <img alt="developer smashing keyboard keys with tongue sticking out" src="img/dev.gif">
           </section>
 				</section>
+
+        <section>
+          <section>
+            <h2>Disclaimers</h2>
+            <p class="fragment">Animated GIFs <span class="fragment">... </span><span class="fragment">JIFs?</span></p>
+            <p class="fragment">Errors</p>
+            <img class="fragment" alt="jif peanut butters" src="img/jifs.png" style="border:none; box-shadow:none;">
+          </section>
+          <section>
+            <h2>You might be like</h2>
+            <img alt="someone leaning over into view with accusatory look" src="img/holdup.gif">
+            <h2>But before you're like...</h2>
+          </section>
+          <section data-background-image="img/wrong.gif">
+          </section>
+          <section data-background-image="img/talking.gif">
+            <h2 style="color:white; text-shadow: 1px 1px 5px #333;">Let's talk about it!</h2>
+            <h4 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">After these messages...</h4>
+          </section>
+        </section>
 
 				<section>
 					<section>
@@ -81,17 +101,10 @@
             <p>When I'm in conversation with other devs...</p>
           </section>
           <section data-background-image="img/franco.gif" data-background-transition="zoom">
-
+          </section>
+          <section data-background-image="img/words.png">
           </section>
 				</section>
-
-        <section>
-          <section>
-            <img src="img/holdup.gif">
-          </section>
-          <section data-background-image="img/wrong.gif">
-          </section>
-        </section>
 
 				<section>
 					<section>
@@ -106,20 +119,72 @@ var shark = function (side) {
   }
 }
 
-var side = "left";
-shark(side);
+shark("left");
 						</code></pre>
 					</section>
           <section>
             <h2>parameter (n.)</h2>
             <p>1650s in geometry, from Modern Latin parameter (1630s), from Greek para- "beside, subsidiary" (see para- (1)) + metron "measure" (see meter (n.2)).</p>
-            <p>A geometry term until 1920s when it yielded sense of "measurable factor which helps to define a particular system" (1927). Common modern meaning (influenced by perimeter) of "boundary, limit, characteristic factor" is from 1950s. Related: Parametric.</p>
+            <p>A geometry term until 1920s when it yielded sense of "measurable factor which helps to define a particular system" (1927). Common modern meaning (influenced by perimeter) of "boundary, limit, <span class="fragment highlight-red">characteristic factor</span>" is from 1950s. Related: Parametric.</p>
           </section>
           <section>
-            <h2>Argument</h2>
-            
+            <h2>Argument (n.)</h2>
+            <p>early 14c., "statements and reasoning in support of a proposition," from Old French arguement "reasoning, opinion; accusation, charge" (13c.), from Latin argumentum "evidence, ground, support, proof; a logical argument," from arguere "to argue" (see argue). Sense passed through "subject of contention" to "a quarrel," a sense formerly attached to argumentation.</p>
+          </section>
+          <section>
+            <h2>Parameter vs. Argument</h2>
+            <pre><code class="javascript" data-trim contenteditable>
+// Here's the parameter!
+var shark = function (side) {
+  if (side == "left") {
+    sillyDance();
+    console.log("LOLOL");
+  } else {
+    normalDance();
+  }
+}
+
+// Here's the argument!
+shark("left");
+            </code></pre>
+          </section>
+          <section>
+            <q style="font-style: normal;">The term parameter (sometimes called <span class="fragment highlight-red">formal parameter</span>) is often used to refer to the variable as found in the function definition, while argument (sometimes called <span class="fragment highlight-red">actual parameter</span>) refers to the actual input passed.</q>
+            <p><a href="https://en.wikipedia.org/wiki/Parameter_(computer_programming)" target="_blank"><small style="text-align: right;">- Wikipedia on Parameters in Computer Programming</small></a><p>
+          </section>
+          <section>
+            <q style="font-style: normal;">A function definition can also contain parameters, but unlike variables, <span class="fragment highlight-red">parameters are not listed among the arguments that the function takes</span>.</q>
+            <p><a href="https://en.wikipedia.org/wiki/Parameter#Mathematical_functions" target="_blank"><small style="text-align: right !important;">- Wikipedia on Parameters in Mathematical Functions</small></a></p>
+          </section>
+          <section>
+            <h2>In Math...</h2>
+            <p>When parameters are present, a whole family of functions is defined, one for every valid set parameters' values. The variable x designates the function's <span class="fragment highlight-red">argument</span>, but a, b, and c are <span class="fragment highlight-blue">parameters</span> that determine which particular quadratic function is being considered<p>
+            <p>f(<span class="fragment highlight-red">x</span>) = <span class="fragment highlight-blue">a</span><span class="fragment highlight-red">x</span>^2 + <span class="fragment highlight-blue">b</span><span class="fragment highlight-red">x</span> + <span class="fragment highlight-blue">c</span></p>
+          </section>
+          <section data-background-image="img/wrinkling.gif">
+          </section>
+          <section>
+            <h2>Takeaway</h2>
+            <p>Parameters help define a function.</p>
+            <p>Arguments are passed into a function.</p>
+          </section>
+          <section data-background-image="img/easy-as-childbirth.gif">
           </section>
 				</section>
+
+        <section>
+          <section>
+            <h2>Acronyms</h2>
+          </section>
+          <section>
+            <h2>CRM CMS CDN</h2>
+          </section>
+          <section>
+            <h2>SaaS vs. Sass</h2>
+            <p>Please clarify when you're talking about this.</p>
+            <img alt="Zoidberg being sassy" src="img/sassy.gif">
+          </section>
+        </section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
