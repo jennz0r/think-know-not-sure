@@ -72,7 +72,7 @@
         <section>
           <section>
             <h2>Disclaimers</h2>
-            <p class="fragment">Animated GIFs <span class="fragment">... </span><span class="fragment">JIFs?</span></p>
+            <p class="fragment">Animated GIFs</p>
             <p class="fragment">Errors</p>
             <img class="fragment" alt="jif peanut butters" src="img/jifs.png" style="border:none; box-shadow:none;">
           </section>
@@ -90,6 +90,15 @@
         </section>
 
 				<section>
+          <section data-background-image="img/allons-y.gif">
+            <h2 style="color:white; text-shadow: 1px 1px 5px #333;">Allons-y!</h2>
+          </section>
+          <section data-background-image="img/dev.gif">
+            <h2 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">Developer</h2>
+            <h2 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">Software Engineer</h2>
+            <h2 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">Programmer</h2>
+            <h2 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">Code Monkey</h2>
+          </section>
 					<section>
 						<h2>Some days</h2>
 						<p>When I look at my computer...</p>
@@ -102,11 +111,20 @@
           </section>
           <section data-background-image="img/franco.gif" data-background-transition="zoom">
           </section>
+          <section>
+            <blockquote style="font-style:normal;"><strong>There are only two hard things in Computer Science: cache invalidation and <span class="fragment highlight-red">naming things</span>.</strong></blockquote>
+            <small>- Phil Karlton</small>
+          </section>
           <section data-background-image="img/words.png">
           </section>
 				</section>
 
 				<section>
+          <section>
+            <h2>Parameter vs. Argument</h2>
+            <h3>What's the difference? Is there one?</h3>
+            <aside class="notes">Notes</aside>
+          </section>
 					<section>
 						<h2>Parameter vs. Argument</h2>
 						<pre><code class="javascript" data-trim contenteditable>
@@ -117,19 +135,54 @@ var shark = function (side) {
   } else {
     normalDance();
   }
-}
+};
 
 shark("left");
 						</code></pre>
+            <aside class="notes">Notes</aside>
 					</section>
           <section>
             <h2>parameter (n.)</h2>
             <p>1650s in geometry, from Modern Latin parameter (1630s), from Greek para- "beside, subsidiary" (see para- (1)) + metron "measure" (see meter (n.2)).</p>
-            <p>A geometry term until 1920s when it yielded sense of "measurable factor which helps to define a particular system" (1927). Common modern meaning (influenced by perimeter) of "boundary, limit, <span class="fragment highlight-red">characteristic factor</span>" is from 1950s. Related: Parametric.</p>
+            <p>A geometry term until 1920s when it yielded sense of <span class="fragment highlight-red">"measurable factor which helps to define a particular system"</span> (1927). Common modern meaning (influenced by perimeter) of "boundary, limit, characteristic factor" is from 1950s. Related: Parametric.</p>
+            <p><a href="http://www.etymonline.com/index.php?term=parameter" target="_blank"><small>- Online Etymology Dictionary</small></a></p>
           </section>
           <section>
             <h2>Argument (n.)</h2>
             <p>early 14c., "statements and reasoning in support of a proposition," from Old French arguement "reasoning, opinion; accusation, charge" (13c.), from Latin argumentum "evidence, ground, support, proof; a logical argument," from arguere "to argue" (see argue). Sense passed through "subject of contention" to "a quarrel," a sense formerly attached to argumentation.</p>
+            <p><a href="http://www.etymonline.com/index.php?term=argument" target="_blank"><small>- Online Etymology Dictionary</small></a></p>
+          </section>
+          <section>
+            <h2>Computer Programming</h2>
+            <q style="font-style: normal;">The term parameter (sometimes called <span class="fragment highlight-red">formal parameter</span>) is often used to refer to the variable as found in the function definition, while argument (sometimes called <span class="fragment highlight-red">actual parameter</span>) refers to the actual input passed.</q>
+            <p><a href="https://en.wikipedia.org/wiki/Parameter_(computer_programming)" target="_blank"><small style="text-align: right;">- Wikipedia on Parameters in Computer Programming</small></a><p>
+          </section>
+          <section>
+            <h2>Mathematical Functions</h2>
+            <q style="font-style: normal;">A function definition can also contain parameters, but unlike variables, <span class="fragment highlight-red">parameters are not listed among the arguments that the function takes</span>.</q>
+            <p><a href="https://en.wikipedia.org/wiki/Parameter#Mathematical_functions" target="_blank"><small>- Wikipedia on Parameters in Mathematical Functions</small></a></p>
+          </section>
+          <section>
+            <h2>In Math...</h2>
+            <p>When parameters are present, a whole family of functions is defined, one for every valid set parameters' values. The variable x designates the function's <span class="fragment highlight-red">argument</span>, but a, b, and c are <span class="fragment highlight-blue">parameters</span> that determine which particular quadratic function is being considered<p>
+            <p>f(<span class="fragment highlight-red">x</span>) = <span class="fragment highlight-blue">a</span><span class="fragment highlight-red">x</span>^2 + <span class="fragment highlight-blue">b</span><span class="fragment highlight-red">x</span> + <span class="fragment highlight-blue">c</span></p>
+          </section>
+          <section>
+            <h2>Wait a second...</h2>
+            <p>f(x) = <span style="color:tomato;">a</span>x^2</p>
+            <p style="position:absolute; left:25%; text-align:left;">
+              var foo = function (<span style="color:tomato;">bar</span>) {<br>
+              &nbsp;&nbsp;console.log("What?");<br>
+            };</p>
+          </section>
+          <section data-background-image="img/flip.gif">
+          </section>
+          <section data-background-image="img/wrinkling.gif">
+          </section>
+          <section>
+            <h2>Takeaway</h2>
+            <p>Parameters help define a function.</p>
+            <p>Arguments are passed into a function.</p>
           </section>
           <section>
             <h2>Parameter vs. Argument</h2>
@@ -142,31 +195,11 @@ var shark = function (side) {
   } else {
     normalDance();
   }
-}
+};
 
 // Here's the argument!
 shark("left");
             </code></pre>
-          </section>
-          <section>
-            <q style="font-style: normal;">The term parameter (sometimes called <span class="fragment highlight-red">formal parameter</span>) is often used to refer to the variable as found in the function definition, while argument (sometimes called <span class="fragment highlight-red">actual parameter</span>) refers to the actual input passed.</q>
-            <p><a href="https://en.wikipedia.org/wiki/Parameter_(computer_programming)" target="_blank"><small style="text-align: right;">- Wikipedia on Parameters in Computer Programming</small></a><p>
-          </section>
-          <section>
-            <q style="font-style: normal;">A function definition can also contain parameters, but unlike variables, <span class="fragment highlight-red">parameters are not listed among the arguments that the function takes</span>.</q>
-            <p><a href="https://en.wikipedia.org/wiki/Parameter#Mathematical_functions" target="_blank"><small style="text-align: right !important;">- Wikipedia on Parameters in Mathematical Functions</small></a></p>
-          </section>
-          <section>
-            <h2>In Math...</h2>
-            <p>When parameters are present, a whole family of functions is defined, one for every valid set parameters' values. The variable x designates the function's <span class="fragment highlight-red">argument</span>, but a, b, and c are <span class="fragment highlight-blue">parameters</span> that determine which particular quadratic function is being considered<p>
-            <p>f(<span class="fragment highlight-red">x</span>) = <span class="fragment highlight-blue">a</span><span class="fragment highlight-red">x</span>^2 + <span class="fragment highlight-blue">b</span><span class="fragment highlight-red">x</span> + <span class="fragment highlight-blue">c</span></p>
-          </section>
-          <section data-background-image="img/wrinkling.gif">
-          </section>
-          <section>
-            <h2>Takeaway</h2>
-            <p>Parameters help define a function.</p>
-            <p>Arguments are passed into a function.</p>
           </section>
           <section data-background-image="img/easy-as-childbirth.gif">
           </section>
@@ -174,89 +207,62 @@ shark("left");
 
         <section>
           <section>
-            <h2>Acronyms</h2>
+            <h2>Con<span class="fragment highlight-red">cat</span>enation (n.)</h2>
+            <p>c. 1600, from Late Latin concatenationem (nominative concatenatio) "a linking together," noun of action from past participle stem of concatenare "to link together," from com- "together" (see com-) + catenare, from catena "a chain" (see chain (n.)).</p>
           </section>
-          <section>
-            <h2>CRM CMS CDN</h2>
-          </section>
-          <section>
-            <h2>SaaS vs. Sass</h2>
-            <p>Please clarify when you're talking about this.</p>
-            <img alt="Zoidberg being sassy" src="img/sassy.gif">
+          <section data-background-image="img/fry.jpg">
+            <h2 style="color:white; text-shadow: 1px 1px 5px #333; margin-bottom:0;">Happy 6th Birthday!</h2>
+            <small class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">console.log("Happy " + 6 + "th " + "Birthday!")</small>
           </section>
         </section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+        <section>
+          <section>
+            <h1>Acronyms</h1>
+          </section>
+          <section>
+            <h2>CRM CMS CDN</h2>
+            <p class="fragment"><span style="color:tomato;">C</span>ustomer <span style="color:tomato;">R</span>elationship <span style="color:tomato;">M</span>anager<br><small class="fragment">like Salesforce!</small></p>
+            <p class="fragment"><span style="color:tomato;">C</span>ontent <span style="color:tomato;">M</span>anagement <span style="color:tomato;">S</span>ystem<br><small class="fragment">like Wordpress!</small></p>
+            <p class="fragment"><span style="color:tomato;">C</span>ontent <span style="color:tomato;">D</span>elivery <span style="color:tomato;">N</span>etwork<br><small class="fragment">like Amazon CloudFront!</small></p>
+          </section>
+          <section>
+            <h2>SaaS vs. Sass</h2>
+            <p>Please clarify when you're talking about these.</p>
+            <img alt="Zoidberg being sassy" src="img/sassy.gif">
+          </section>
+          <section>
+            <h2>DOM</h2>
+            <img alt="Grazer Dom" src="img/dom-grazer.jpg" style="width:50%;">
+          </section>
+          <section>
+            <h2>DOM</h2>
+            <img alt="DOM the band" src="img/dom-band.jpg" style="width:50%;">
+          </section>
+          <section>
+            <h2>DOM</h2>
+            <img alt="Dom Mountain" src="img/dom-mountain.jpg" style="width:50%;">
+            <p>The Dom is a mountain of the Pennine Alps, located between Randa and <span class="fragment highlight-red">Saas</span>-Fee in the canton of Valais.</p>
+          </section>
+          <section data-background-image="img/dom-fast.jpg">
+            <h2 style="color:white; text-shadow: 1px 1px 5px #333;">DOM</h2>
+          </section>
+          <section>
+            <h2>Document Object Model</h2>
+            <q>The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents.</q>
+          </section>
+        </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+        <section>
+          <section data-background-image="img/scott-pilgram.gif">
+          </section>
+          <section data-background-image="img/understand-anything.gif" data-background-size="1100px">
+          <section>
+          </section>
+        </section>
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
 					<section>
 						<h2>Fragment Styles</h2>
 						<p>There's different types of fragments, like:</p>
@@ -328,140 +334,6 @@ shark("left");
 				</section>
 
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
 					<h2>Much more</h2>
 					<ul>
 						<li>Right-to-left support</li>
@@ -471,17 +343,7 @@ Reveal.addEventListener( 'customevent', function() {
 						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
 					</ul>
 				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
