@@ -58,11 +58,11 @@
 						</p>
 					</section>
 					<section data-background-image="img/wasteland.png">
-            <a href="http://mochimachine.org/wasteland/" target="_blank"><h2 style="color:white; text-shadow: 1px 1px 5px #333;">(Human) Wasteland</h2></a>
-            <h3 style="color:white; text-shadow: 1px 1px 5px #333;">aka The Poop Map</h3>
+            <a href="http://mochimachine.org/wasteland/" target="_blank"><h2 class="white-font">(Human) Wasteland</h2></a>
+            <h3 class="white-font">aka The Poop Map</h3>
 					</section>
 					<section data-background-image="img/developers.png">
-						<a href="http://developersdevelope.rs/" target="_blank"><h2 style="color:white; text-shadow: 1px 1px 5px #333;">Developers Developers</h2></a>
+						<a href="http://developersdevelope.rs/" target="_blank"><h2 class="white-font">Developers Developers</h2></a>
 					</section>
           <section data-background-image="img/coding.gif">
             <img alt="developer smashing keyboard keys with tongue sticking out" src="img/dev.gif">
@@ -84,20 +84,20 @@
           <section data-background-image="img/wrong.gif">
           </section>
           <section data-background-image="img/talking.gif">
-            <h2 style="color:white; text-shadow: 1px 1px 5px #333;">Let's talk about it!</h2>
-            <h4 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">After these messages...</h4>
+            <h2 class="white-font">Let's talk about it!</h2>
+            <h4 class="fragment  white-font">After these messages...</h4>
+          </section>
+          <section data-background-image="img/allons-y.gif">
+            <h2 class="white-font">Allons-y!</h2>
           </section>
         </section>
 
 				<section>
-          <section data-background-image="img/allons-y.gif">
-            <h2 style="color:white; text-shadow: 1px 1px 5px #333;">Allons-y!</h2>
-          </section>
           <section data-background-image="img/dev.gif">
-            <h2 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">Developer</h2>
-            <h2 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">Software Engineer</h2>
-            <h2 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">Programmer</h2>
-            <h2 class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">Code Monkey</h2>
+            <h2 class="fragment  white-font">Developer</h2>
+            <h2 class="fragment  white-font">Software Engineer</h2>
+            <h2 class="fragment  white-font">Programmer</h2>
+            <h2 class="fragment  white-font">Code Monkey</h2>
           </section>
 					<section>
 						<h2>Some days</h2>
@@ -117,12 +117,21 @@
           </section>
           <section data-background-image="img/words.png">
           </section>
+          <section data-background-image="img/urkel.gif">
+          </section>
+          <section data-background-image="img/nod.gif">
+          </section>
 				</section>
 
 				<section>
           <section>
             <h2>Parameter vs. Argument</h2>
             <h3>What's the difference? Is there one?</h3>
+            <aside class="notes">Notes</aside>
+          </section>
+          <section>
+            <h2>Parameter vs. Argument</h2>
+            <img width="75%" alt="Google search for parameter versus argument" src="img/parameter-argument-search.png">
             <aside class="notes">Notes</aside>
           </section>
 					<section>
@@ -157,13 +166,15 @@ shark("left");
             <q style="font-style: normal;">The term parameter (sometimes called <span class="fragment highlight-red">formal parameter</span>) is often used to refer to the variable as found in the function definition, while argument (sometimes called <span class="fragment highlight-red">actual parameter</span>) refers to the actual input passed.</q>
             <p><a href="https://en.wikipedia.org/wiki/Parameter_(computer_programming)" target="_blank"><small style="text-align: right;">- Wikipedia on Parameters in Computer Programming</small></a><p>
           </section>
+          <section data-background-image="img/alice.gif">
+          </section>
           <section>
             <h2>Mathematical Functions</h2>
             <q style="font-style: normal;">A function definition can also contain parameters, but unlike variables, <span class="fragment highlight-red">parameters are not listed among the arguments that the function takes</span>.</q>
             <p><a href="https://en.wikipedia.org/wiki/Parameter#Mathematical_functions" target="_blank"><small>- Wikipedia on Parameters in Mathematical Functions</small></a></p>
           </section>
           <section>
-            <h2>In Math...</h2>
+            <h2>Please, go on...</h2>
             <p>When parameters are present, a whole family of functions is defined, one for every valid set parameters' values. The variable x designates the function's <span class="fragment highlight-red">argument</span>, but a, b, and c are <span class="fragment highlight-blue">parameters</span> that determine which particular quadratic function is being considered<p>
             <p>f(<span class="fragment highlight-red">x</span>) = <span class="fragment highlight-blue">a</span><span class="fragment highlight-red">x</span>^2 + <span class="fragment highlight-blue">b</span><span class="fragment highlight-red">x</span> + <span class="fragment highlight-blue">c</span></p>
           </section>
@@ -175,9 +186,9 @@ shark("left");
               &nbsp;&nbsp;console.log("What?");<br>
             };</p>
           </section>
-          <section data-background-image="img/flip.gif">
-          </section>
           <section data-background-image="img/wrinkling.gif">
+          </section>
+          <section data-background-image="img/flip.gif">
           </section>
           <section>
             <h2>Takeaway</h2>
@@ -207,12 +218,72 @@ shark("left");
 
         <section>
           <section>
+            <h2>Lexical Scoping</h2>
+            <img alt="Google search of lexical scoping" src="img/lexical-scoping.png">
+          </section>
+          <section data-background-image="img/kitten.gif">
+            <h2 class="white-font">Huh?</h2>
+          </section>
+          <section>
+            <h2>Lexical Scoping</h2>
+            <p>
+              <span style="position:absolute; left:15%;">Lexical scoping</span>
+              <span style="position:relative;"><=></span>
+              <span style="position:absolute; right:17%;">Static scoping</span>
+            </p>
+            <p>
+              <span style="position:absolute; left:32%;">Scope</span>
+              <span style="position:relative;"><=></span>
+              <span style="position:absolute; right:3%;">Range of functionality</span>
+            </p>
+            <p>
+              <span style="position:absolute; left:32%;">Called</span>
+              <span style="position:relative;"><=></span>
+              <span style="position:absolute; right:22%;">Referenced</span>
+            </p>
+          </section>
+          <section data-background-image="img/break-it-down.gif">
+            <h2 class="white-font">Break it down.</h2>
+          </section>
+          <section>
+            <h2>Scope (n.1)</h2>
+            <p>"extent," 1530s, "room to act," from Italian scopo <span class="fragment highlight-red">"aim, purpose, object, thing aimed at, mark, target,"</span> from Latin scopus, from Greek skopos "aim, target, object of attention; watcher, one who watches" from metathesized form of PIE *spek-yo-, from root *spek- "to observe" (cognates: Sanskrit spasati "sees;" Avestan spasyeiti "spies;" Greek skopein "behold, look, consider," skeptesthai "to look at;" Latin specere "to look at;" Old High German spehhon "to spy," German spähen "to spy"). Sense of "distance the mind can reach, extent of view" first recorded c. 1600.</p>
+          </section>
+          <section>
+            <p>A scope is a part of a program that is or can be the scope for a set of bindings – a precise definition is tricky (see below), but in casual use and in practice largely corresponds to a block, a function, or a file, depending on language and type of entity.</p>
+          </section>
+          <section>
+            <h2>Lexical</h2>
+          </section>
+          <section>
+            <h2>Dynamic</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Recursion</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Instantiate</h2>
+          </section>
+          <section>
+            <h2>Architecture</h2>
+            <h4>CATIA</h4>
+          </section>
+        </section>
+
+        <section>
+          <section>
             <h2>Con<span class="fragment highlight-red">cat</span>enation (n.)</h2>
             <p>c. 1600, from Late Latin concatenationem (nominative concatenatio) "a linking together," noun of action from past participle stem of concatenare "to link together," from com- "together" (see com-) + catenare, from catena "a chain" (see chain (n.)).</p>
           </section>
           <section data-background-image="img/fry.jpg">
             <h2 style="color:white; text-shadow: 1px 1px 5px #333; margin-bottom:0;">Happy 6th Birthday!</h2>
-            <small class="fragment" style="color:white; text-shadow: 1px 1px 5px #333;">console.log("Happy " + 6 + "th " + "Birthday!")</small>
+            <small class="fragment  white-font">console.log("Happy " + 6 + "th " + "Birthday!")</small>
           </section>
         </section>
 
@@ -245,11 +316,28 @@ shark("left");
             <p>The Dom is a mountain of the Pennine Alps, located between Randa and <span class="fragment highlight-red">Saas</span>-Fee in the canton of Valais.</p>
           </section>
           <section data-background-image="img/dom-fast.jpg">
-            <h2 style="color:white; text-shadow: 1px 1px 5px #333;">DOM</h2>
+            <h2 class="white-font">DOM</h2>
           </section>
           <section>
             <h2>Document Object Model</h2>
             <q>The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents.</q>
+          </section>
+          <section>
+            <h2>GUI</h2>
+          </section>
+          <section>
+            <h2>GUI</h2>
+          </section>
+          <section data-background-image="img/ooeygooey.jpg">
+            <h2 class="white-font">Ooey Gooey Butter Cake</h2>
+          </section>
+          <section data-background-image="img/geoduck.jpg">
+            <h2 class="fragment white-font">Geoduck</h2>
+          </section>
+          <section>
+            <h2>AJAX</h2>
+            <p>Isn't JavaScript always Asyncronous?</p>
+            <p>Who even uses XML?</p>
           </section>
         </section>
 
