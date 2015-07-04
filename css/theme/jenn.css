@@ -273,3 +273,8 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #3b759e; }
+
+.white-font {
+  color: white !important;
+  text-shadow: 1px 1px 5px #333 !important;
+}
