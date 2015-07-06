@@ -54,9 +54,13 @@
 					<section>
 						<h2>I'm Jenn</h2>
 						<p>
-							I'm a self taught front end developer.
+							I'm a self-taught Front End Developer.
 						</p>
 					</section>
+          <section>
+            <h2>Software Engineer</h2>
+            <img alt="eventbrite logo" src="img/eventbrite.png" style="border:none;">
+          </section>
 					<section data-background-image="img/wasteland.png">
             <a href="http://mochimachine.org/wasteland/" target="_blank"><h2 class="white-font">(Human) Wasteland</h2></a>
             <h3 class="white-font">aka The Poop Map</h3>
@@ -119,7 +123,7 @@
           </section>
           <section data-background-image="img/urkel.gif">
           </section>
-          <section data-background-image="img/nod.gif">
+          <section data-background-image="img/brentrambo.gif">
           </section>
 				</section>
 
@@ -152,13 +156,12 @@ shark("left");
 					</section>
           <section>
             <h2>parameter (n.)</h2>
-            <p>1650s in geometry, from Modern Latin parameter (1630s), from Greek para- "beside, subsidiary" (see para- (1)) + metron "measure" (see meter (n.2)).</p>
-            <p>A geometry term until 1920s when it yielded sense of <span class="fragment highlight-red">"measurable factor which helps to define a particular system"</span> (1927). Common modern meaning (influenced by perimeter) of "boundary, limit, characteristic factor" is from 1950s. Related: Parametric.</p>
+            <p>A geometry term until 1920s when it yielded sense of <span class="fragment highlight-red">"measurable factor which helps to define a particular system"</span> (1927).</p>
             <p><a href="http://www.etymonline.com/index.php?term=parameter" target="_blank"><small>- Online Etymology Dictionary</small></a></p>
           </section>
           <section>
             <h2>Argument (n.)</h2>
-            <p>early 14c., "statements and reasoning in support of a proposition," from Old French arguement "reasoning, opinion; accusation, charge" (13c.), from Latin argumentum "evidence, ground, support, proof; a logical argument," from arguere "to argue" (see argue). Sense passed through "subject of contention" to "a quarrel," a sense formerly attached to argumentation.</p>
+            <p>early 14c., "statements and reasoning in support of a proposition," from Old French arguement "reasoning, opinion; accusation, charge" (13c.)</p>
             <p><a href="http://www.etymonline.com/index.php?term=argument" target="_blank"><small>- Online Etymology Dictionary</small></a></p>
           </section>
           <section>
@@ -175,7 +178,7 @@ shark("left");
           </section>
           <section>
             <h2>Please, go on...</h2>
-            <p>When parameters are present, a whole family of functions is defined, one for every valid set parameters' values. The variable x designates the function's <span class="fragment highlight-red">argument</span>, but a, b, and c are <span class="fragment highlight-blue">parameters</span> that determine which particular quadratic function is being considered<p>
+            <p>The variable x designates the function's <span class="fragment highlight-red">argument</span>, but a, b, and c are <span class="fragment highlight-blue">parameters</span> that determine which particular quadratic function is being considered<p>
             <p>f(<span class="fragment highlight-red">x</span>) = <span class="fragment highlight-blue">a</span><span class="fragment highlight-red">x</span>^2 + <span class="fragment highlight-blue">b</span><span class="fragment highlight-red">x</span> + <span class="fragment highlight-blue">c</span></p>
           </section>
           <section>
@@ -212,11 +215,22 @@ var shark = function (side) {
 shark("left");
             </code></pre>
           </section>
+          <section data-background-image="img/switch.gif">
+            <h2 class="white-font">The terms parameter and argument are sometimes used interchangeably.</h2>
+          </section>
           <section data-background-image="img/easy-as-childbirth.gif">
           </section>
 				</section>
 
         <section>
+          <section>
+            <h2>Scope</h2>
+            <aside class="notes">
+              Have you ever tried explaining scope to someone?
+            </aside>
+          </section>
+          <section data-background-image="img/why.gif" data-background-size="1100px">
+          </section>
           <section>
             <h2>Lexical Scoping</h2>
             <img alt="Google search of lexical scoping" src="img/lexical-scoping.png">
@@ -241,40 +255,155 @@ shark("left");
               <span style="position:relative;"><=></span>
               <span style="position:absolute; right:22%;">Referenced</span>
             </p>
+            <br>
+            <p class="fragment">They use "scope" in the definition of lexical scope!</p>
           </section>
           <section data-background-image="img/break-it-down.gif">
             <h2 class="white-font">Break it down.</h2>
           </section>
           <section>
             <h2>Scope (n.1)</h2>
-            <p>"extent," 1530s, "room to act," from Italian scopo <span class="fragment highlight-red">"aim, purpose, object, thing aimed at, mark, target,"</span> from Latin scopus, from Greek skopos "aim, target, object of attention; watcher, one who watches" from metathesized form of PIE *spek-yo-, from root *spek- "to observe" (cognates: Sanskrit spasati "sees;" Avestan spasyeiti "spies;" Greek skopein "behold, look, consider," skeptesthai "to look at;" Latin specere "to look at;" Old High German spehhon "to spy," German spähen "to spy"). Sense of "distance the mind can reach, extent of view" first recorded c. 1600.</p>
+            <p>"extent," 1530s, "room to act," from Italian scopo <span class="fragment highlight-red">"aim, purpose, object, thing aimed at, mark, target,"</span> from Latin scopus...</p>
           </section>
           <section>
-            <p>A scope is a part of a program that is or can be the scope for a set of bindings – a precise definition is tricky (see below), but in casual use and in practice largely corresponds to a block, a function, or a file, depending on language and type of entity.</p>
+            <h2>Scope</h2>
+            <p>A <span class="fragment highlight-red">scope</span> is a part of a program that is or can be the <span class="fragment highlight-red">scope</span> for a set of bindings – <span class="fragment  highlight-red">a precise definition is tricky (see below)</span>, but in casual use and in practice largely corresponds to a block, a function, or a file, depending on language and type of entity.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Scope_(computer_science)" target="_blank"><small style="text-align: right;">- Wikipedia on Scope (computer science)</small></a><p>
+          </section>
+          <section data-background-image="img/sadpanda.gif">
           </section>
           <section>
-            <h2>Lexical</h2>
+            <h2>Scope</h2>
+            <p>In computer programming, the scope of a name binding – an association of a name to an entity, such as a variable – is the part of a computer program where the binding is valid: where the name can be used to refer to the entity.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Scope_(computer_science)" target="_blank"><small style="text-align: right;">- Wikipedia on Scope (computer science)</small></a><p>
+          </section>
+          <section data-background-image="img/soso.gif">
           </section>
           <section>
-            <h2>Dynamic</h2>
+            <h2>Scope Again!</h2>
+            <p>The strict definition of the (lexical) "scope" of a name (identifier) is unambiguous – it is <span class="fragment highlight-red">"the portion of source code in which a binding of a name with an entity applies"</span> – and is virtually unchanged from its 1960 definition in the specification of <span class="fragment highlight-red">ALGOL 60</span>.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Scope_(computer_science)#Definition" target="_blank"><small style="text-align: right;">- Wikipedia on Scope (computer science)</small></a><p>
+          </section>
+          <section>
+            <h2>ALGOL&nbsp;&nbsp;60</h2>
+            <p>Short for ALGOrithmic Language 1960</p>
+            <p> ALGOL 60 was the first language implementing nested function definitions with lexical scope.</p>
+            <h2 class="fragment">1960!</h2>
+          </section>
+          <section>
+            <h2>Lexical vs. Dynamic</h2>
+            <p>Lexical scope is the main focus of this article, with dynamic scope understood by contrast with lexical scope.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Scope_(computer_science)" target="_blank"><small style="text-align: right;">- Wikipedia on Scope (computer science)</small></a><p>
+          </section>
+          <section data-background-image="img/scope.gif">
+          </section>
+          <section>
+            <h2>Lexical (adj.)</h2>
+            <p>1833, from Greek lexikos "pertaining to words" (see lexicon) + -al (1). Related: Lexically.</p>
+          </section>
+          <section>
+            <h2>Dynamic (adj.)</h2>
+            </p>1817 as a term in philosophy; 1827 in the sense "pertaining to force producing motion" (the opposite of static)</p>
+          </section>
+          <section>
+            <h2>Lexical vs. Dynamic</h2>
+            <p>... for most programming languages, <span class="fragment  highlight-red">"part of a program"</span> refers to <span class="fragment  highlight-red">"portion of the source code (area of text)"</span>, and is known as <span class="fragment  highlight-red">lexical scope</span>. In some languages, however, <span class="fragment  highlight-blue">"part of a program"</span> refers to <span class="fragment  highlight-blue">"portion of run time (time period during execution)"</span>, and is known as <span class="fragment  highlight-blue">dynamic scope</span>.</p>
+            <p>Both of these terms are somewhat misleading – they misuse technical terms, as discussed in the definition – but the distinction itself is accurate and precise, and these are the standard respective terms.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Scope_(computer_science)" target="_blank"><small style="text-align: right;">- Wikipedia on Scope (computer science)</small></a><p>
+          </section>
+          <section>
+            <h2>Lexical vs. Dynamic</h2>
+            <p>In practice, <span class="fragment highlight-red">with lexical scope a variable's definition is resolved by searching its containing block or function, then if that fails searching the outer containing block, and so on</span>, whereas <span class="fragment highlight-blue">with dynamic scope the calling function is searched, then the function which called that calling function, and so on</span>.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Scope_(computer_science)#Definition" target="_blank"><small style="text-align: right;">- Wikipedia on Scope (computer science)</small></a><p>
+          </section>
+          <section>
+            <h2>Lexical vs. Dynamic</h2>
+            <p>All that being said, dynamic scope is typically used less often than lexical scope.</p>
+          </section>
+          <section data-background-image="img/box.gif">
+            <h2 class="white-font">Lexical Scope</h2>
           </section>
         </section>
 
         <section>
+          <section data-background-image="img/patrick.gif">
+            <h2 class="white-font">Recursion</h2>
+          </section>
+          <section>
+            <h2>Recursion (n.)</h2>
+            <p>1610s, from Latin recursionem (nominative recursio) <span class="fragment highlight-red">"a running backward, return,"</span> noun of action from past participle stem of recurrere <span class="fragment highlight-red">"run back"</span>.</p>
+          </section>
           <section>
             <h2>Recursion</h2>
+            <p>The most common application of recursion is in mathematics and computer science, in which it refers to a method of <span class="fragment  highlight-red">defining</span> functions in which the function being <span class="fragment  highlight-red">defined</span> is applied within its own <span class="fragment  highlight-red">definition</span>.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Recursion" target="_blank"><small style="text-align: right;">- Wikipedia on Recursion</small></a><p>
+          </section>
+          <section>
+            <h2>Recursion</h2>
+            <p>Specifically, this defines an infinite number of instances (function values), using a finite expression that for some instances may refer to other instances, but in such a way that no loop or infinite chain of references can occur.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Recursion" target="_blank"><small style="text-align: right;">- Wikipedia on Recursion</small></a><p>
+          </section>
+          <section data-background-image="img/wat.gif">
+          </section>
+          <section>
+            <h2>Recursion</h2>
+            <p>In mathematics and computer science, a class of objects or methods exhibit recursive behavior when they can be defined by two properties:</p>
+            <p>1. A simple base case (or cases)—a terminating scenario that does not use recursion to produce an answer</p>
+            <p>2. A set of rules that reduce all other cases toward the base case</p>
+            <p><a href="https://en.wikipedia.org/wiki/Recursion" target="_blank"><small style="text-align: right;">- Wikipedia on Recursion</small></a><p>
+          </section>
+          <section data-background-image="img/what.gif">
+          </section>
+          <section>
+            <h2>Recursion</h2>
+            <p>A function that calls itself.</p>
+          </section>
+          <section>
+            <h2>Fibonacci Sequence</h2>
+            <pre><code class="javascript">
+  var fibonacci = function (n) {
+    return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
+  };
+            </code></pre>
+            <img alt="shrug" src="img/shrug.gif" class="fragment">
+          </section>
+          <section>
+            <h2>Factorials<span class="fragment">!</span></h2>
+            <pre><code class="javascript">
+  var factorial = function (n) {
+    if (n <= 1) {
+      return 1;
+    }
+    else {
+      return n * factorial(n-1);
+    }
+  };
+            </code></pre>
+          </section>
+          <section data-background-image="img/regularshow.gif">
           </section>
         </section>
 
-        <section>
+        <!-- <section>
+          <section data-background-image="img/instant.gif">
+            <h2>Instantiate</h2>
+          </section>
           <section>
             <h2>Instantiate</h2>
+            <p>Etymology</p>
           </section>
           <section>
             <h2>Architecture</h2>
             <h4>CATIA</h4>
           </section>
-        </section>
+          <section data-background-image="img/nerds.gif">
+          </section>
+          <section data-background-image="img/oh.gif">
+          </section>
+          <section>
+
+          </section>
+        </section> -->
 
         <section>
           <section>
@@ -320,13 +449,18 @@ shark("left");
           </section>
           <section>
             <h2>Document Object Model</h2>
-            <q>The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents.</q>
+            <p>The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank"><small style="text-align: right;">- Wikipedia on DOM</small></a><p>
           </section>
           <section>
-            <h2>GUI</h2>
+            <h2>Document Object Model</h2>
+            <p>The Document Object Model (DOM) is a programming interface for HTML, XML and SVG documents. It provides a structured representation of the document (a tree) and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content.</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank"><small style="text-align: right;">- Mozilla Developer Network on DOM</small></a><p>
+          </section>
+          <section data-background-image="img/dom.png">
           </section>
           <section>
-            <h2>GUI</h2>
+            <h2>GUI&nbsp;&nbsp;&&nbsp;&nbsp;CLI</h2>
           </section>
           <section data-background-image="img/ooeygooey.jpg">
             <h2 class="white-font">Ooey Gooey Butter Cake</h2>
@@ -334,105 +468,54 @@ shark("left");
           <section data-background-image="img/geoduck.jpg">
             <h2 class="fragment white-font">Geoduck</h2>
           </section>
+          <section data-background-image="img/klee.jpg">
+            <h2 class="white-font">CLI</h2>
+          </section>
+          <section>
+            <h2>GUI</h2>
+            <p>Graphical User Interface (GUIs) were introduced in reaction to the perceived steep learning curve of Command-Line Interfaces (CLIs), which require commands to be typed on the keyboard.</p>
+          </section>
           <section>
             <h2>AJAX</h2>
-            <p>Isn't JavaScript always Asyncronous?</p>
             <p>Who even uses XML?</p>
+            <p>jQuery option for</p>
+            <pre><code class="javascript">
+  async: false
+            </code></pre>
           </section>
         </section>
 
         <section>
+          <section data-background-image="img/conclusion.gif">
+          </section>
           <section data-background-image="img/scott-pilgram.gif">
           </section>
-          <section data-background-image="img/understand-anything.gif" data-background-size="1100px">
           <section>
+            <h2>Don't be like...</h2>
+          </section>
+          <section data-background-image="img/understand-anything.gif" data-background-size="1100px">
+          </section>
+          <section data-background-image="img/gates-ballmer.gif">
+          </section>
+          <section>
+            <h2>Please be more like...</h2>
+          </section>
+          <section data-background-image="img/yougotitdude.gif" data-background-size="1100px">
+          </section>
+          <section>
+            <h2>It's difficult!</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NdcZrdvh24E" frameborder="0" allowfullscreen></iframe>
+          </section>
+          <section data-background-image="img/danceparty.gif">
+          </section>
+          <section>
+            <h1>Thank you</h1>
+            <p><a href="" target="_blank">jennz0r.github.io/think-know-not-sure</a></p>
+            <br>
+            <small>A talk about words by <a href="http://mochimachine.org/">Jennifer Wong</a><br><a href="https://github.com/jennz0r" target="_blank">jennz0r</a> / <a href="https://twitter.com/mybluewristband" target="_blank">@mybluewristband</a></small>
           </section>
         </section>
 
-
-
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-			</div>
-		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
@@ -461,6 +544,5 @@ shark("left");
 			});
 
 		</script>
-
 	</body>
 </html>
