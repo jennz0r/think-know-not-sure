@@ -161,7 +161,7 @@ body {
   opacity: 0.05;
   width: 0;
   height: 0;
-  border: 12px solid transparent;
+  border: 8px solid transparent;
   -webkit-transform: scale(0.9999);
       -ms-transform: scale(0.9999);
           transform: scale(0.9999);
@@ -177,34 +177,36 @@ body {
   margin-top: 1px; }
 
 .reveal .controls div.navigate-left {
-  top: 42px;
-  border-right-width: 22px;
+  top: 80px;
+  left: 71px;
+  border-right-width: 10px;
   border-right-color: #000; }
 
 .reveal .controls div.navigate-left.fragmented {
   opacity: 0.3; }
 
 .reveal .controls div.navigate-right {
-  left: 74px;
-  top: 42px;
-  border-left-width: 22px;
+  left: 107px;
+  top: 80px;
+  border-left-width: 10px;
   border-left-color: #000; }
 
 .reveal .controls div.navigate-right.fragmented {
   opacity: 0.3; }
 
 .reveal .controls div.navigate-up {
-  left: 42px;
-  border-bottom-width: 22px;
+  top: 61px;
+  left: 90px;
+  border-bottom-width: 10px;
   border-bottom-color: #000; }
 
 .reveal .controls div.navigate-up.fragmented {
   opacity: 0.3; }
 
 .reveal .controls div.navigate-down {
-  left: 42px;
-  top: 74px;
-  border-top-width: 22px;
+  left: 90px;
+  top: 97px;
+  border-top-width: 10px;
   border-top-color: #000; }
 
 .reveal .controls div.navigate-down.fragmented {
