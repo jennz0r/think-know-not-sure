@@ -55,7 +55,7 @@
 					<section>
 						<h2>I'm Jenn</h2>
 						<p>
-							I'm a self-taught Front End Developer.
+							I'm a self-taught Web Developer.
 						</p>
 					</section>
           <section>
@@ -303,7 +303,7 @@ shark("left");
             <p>Lexical scope is the main focus of this article, with dynamic scope understood by contrast with lexical scope.</p>
             <p><a href="https://en.wikipedia.org/wiki/Scope_(computer_science)" target="_blank"><small style="text-align: right;">- Wikipedia on Scope (computer science)</small></a><p>
           </section>
-          <section data-background-image="img/scope.gif">
+          <section data-background-image="img/drinkingdogs.gif">
           </section>
           <section>
             <h2>Lexical (adj.)</h2>
@@ -403,7 +403,8 @@ shark("left");
           </section>
           <section data-background-image="img/fry.jpg">
             <h2 style="color:white; text-shadow: 1px 1px 5px #333; margin-bottom:0;">This is my cat!</h2>
-            <small class="fragment  white-font">console.log("Todo es mejor con " + "cat" + "!");</small>
+          </section>
+          <section data-background-image="img/drinkingcats.gif">
           </section>
           <section>
             <h2>Recursive Cat!</h2>
@@ -436,18 +437,16 @@ shark("left");
             <p>Therefore, Fry is a mammal.</p>
           </section>
           <section>
-            <pre><code class="javascript">
-var Mammal = function() {};
-Mammal.prototype.neoCortex = true;
+            <pre><code class="Python">
+class Mammal:
+    neoCortex = True;
 
-var Cat = function(name, years) {
-  this.name = name;
-  this.years = years;
-};
+class Cat(Mammal):
+    def __init__(self, name, years):
+      self.name = name
+      self.years = years
 
-Cat.prototype = new Mammal;
-
-var fryCat = new Cat('Fry', 6);
+fry_cat = Cat('Fry', 7)
             </code></pre>
             <h3 class="fragment">Cool!</h3>
           </section>
