@@ -455,7 +455,7 @@ shark("left");
                 this.years = years;
               };
 
-              Cat.prototype = Mammal.prototype
+              Cat.prototype = new Mammal();
 
               var fryCat = new Cat('Fry', 7);
             </code></pre>
