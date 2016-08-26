@@ -303,7 +303,7 @@ shark("left");
             <p>Lexical scope is the main focus of this article, with dynamic scope understood by contrast with lexical scope.</p>
             <p><a href="https://en.wikipedia.org/wiki/Scope_(computer_science)" target="_blank"><small style="text-align: right;">- Wikipedia on Scope (computer science)</small></a><p>
           </section>
-          <section data-background-image="img/drinkingdogs.gif">
+          <section data-background-image="img/duckling.gif">
           </section>
           <section>
             <h2>Lexical (adj.)</h2>
@@ -363,7 +363,7 @@ shark("left");
             <p>2. A set of rules that reduce all other cases toward the base case</p>
             <p><a href="https://en.wikipedia.org/wiki/Recursion" target="_blank"><small style="text-align: right;">- Wikipedia on Recursion</small></a><p>
           </section>
-          <section data-background-image="img/what.gif">
+          <section data-background-image="img/psyduckslowpoke.gif">
           </section>
           <section>
             <h2>Recursion</h2>
@@ -436,17 +436,28 @@ shark("left");
             <p>Fry is a cat.</p>
             <p>Therefore, Fry is a mammal.</p>
           </section>
+          <!-- class Mammal(object):
+            neo_cortex = True
+
+          class Cat(Mammal):
+              def __init__(self, name, years):
+                self.name = name
+                self.years = years
+
+          fry_cat = Cat('Fry', 7) -->
           <section>
-            <pre><code class="Python">
-class Mammal(object):
-    neo_cortex = True
+            <pre><code class="JavaScript">
+              var Mammal = function() {};
+              Mammal.prototype.neoCortex = true;
 
-class Cat(Mammal):
-    def __init__(self, name, years):
-      self.name = name
-      self.years = years
+              var Cat = function(name, years) {
+                this.name = name;
+                this.years = years;
+              };
 
-fry_cat = Cat('Fry', 7)
+              Cat.prototype = Mammal.prototype
+
+              var fryCat = new Cat('Fry', 7);
             </code></pre>
             <h3 class="fragment">Cool!</h3>
           </section>
