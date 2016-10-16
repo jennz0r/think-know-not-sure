@@ -291,11 +291,14 @@
           <section>
             <h2>Abstraction</h2>
             <pre><code class="javascript" data-trim contenteditable>
-  var smallArea = Math.PI * 1**2;
-  console.log(smallArea);
+var smallRadius = 1,
+    bigRadius = 100;
 
-  var bigArea = Math.PI * 100**2;
-  console.log(bigArea);
+var smallArea = Math.PI * (smallRadius ** 2);
+console.log(smallArea);
+
+var bigArea = Math.PI * (bigRadius ** 2);
+console.log(bigArea);
             </code></pre>
           </section>
           <section>
