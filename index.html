@@ -205,7 +205,7 @@
           <section data-background-image="img/pancakes.jpg"></section>
           <section>
             <h2>Stack</h2>
-            <p>In computer science, a stack is an <span class="fragment highlight-red">abstract data type</span> that serves as a collection of elements, with two principal operations: <span class="fragment highlight-red">push</span>, which adds an element to the collection, and <span class="fragment highlight-red">pop</span>, which removes the most recently added element that was not yet removed.</p>
+            <p>In computer science, a stack is an <span class="fragment highlight-red">abstract data type</span> that serves as a collection of elements, with two principal operations: <span class="fragment highlight-red">push</span>, which adds an element to the collection, and <span class="fragment highlight-red">pop</span>, which removes the most recently added element.</p>
             <p><a href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)" target="_blank"><small style="text-align: right;">- Wikipedia on Stack (abstract data type)</small></a><p>
           </section>
           <section data-background-image="img/pushpop.gif"></section>
@@ -242,7 +242,7 @@
           </section>
           <section>
             <h2>Refactoring</h2>
-            <p>Code refactoring is the process of restructuring existing computer code—<span class="fragment highlight-red">changing the factoring</span>—without changing its external behavior. Refactoring improves nonfunctional attributes of the software. Advantages include improved code readability and reduced complexity; these can improve source-code maintainability and create a more expressive internal architecture or object model to improve extensibility.</p>
+            <p>Code refactoring is the process of restructuring existing computer code—<span class="fragment highlight-red">changing the factoring</span>—without changing its external behavior. Refactoring improves nonfunctional attributes of the software. Advantages include improved code readability and reduced complexity.</p>
             <p><a href="https://en.wikipedia.org/wiki/Code_refactoring" target="_blank"><small style="text-align: right;">- Wikipedia on Code Refactoring</small></a><p>
           </section>
           <section>
@@ -282,9 +282,10 @@
             <p>Conceptual abstractions may be formed by filtering the information content of a concept or an observable phenomenon, selecting only the aspects which are relevant for a particular purpose. For example, abstracting a leather soccer ball to the more general idea of a ball selects only the information on general ball attributes and behavior, eliminating the other characteristics of that particular ball.</p>
             <p><a href="https://en.wikipedia.org/wiki/Abstraction" target="_blank"><small style="text-align: right;">- Wikipedia on Abstraction</small></a><p>
           </section>
+          <section data-background-image="img/chewy.gif"></section>
           <section>
             <h2>Abstraction</h2>
-            <p>Conceptual abstractions filter content of an observable phenomenon, selecting only the aspects relevant for a particular purpose. For example, abstracting a soccer (football) ball selects only general ball attributes (such as spherical shape), eliminating other, more specific characteristics (such as hexagonal pattern).</p>
+            <p>Conceptual abstractions filter content of an observable phenomenon, selecting aspects relevant for a particular purpose. For example, abstracting a soccer ball selects only general ball attributes (such as spherical shape), eliminating other, more specific characteristics (such as hexagonal pattern).</p>
             <p><a href="" target="_blank"><small style="text-align: right;">- Jenn on Abstraction</small></a><p>
           </section>
           <section data-background-image="img/sports_balls.jpg"></section>
@@ -305,7 +306,7 @@ console.log(bigArea);
             <h2>Abstraction</h2>
             <pre><code class="javascript" data-trim contenteditable>
 function circleArea(radius) {
-  var area = Math.PI * radius**2;
+  var area = Math.PI * (radius ** 2);
   console.log(area);
 }
 
@@ -419,23 +420,23 @@ circleArea(100);
           <section>
             <h2>Object</h2>
             <p>In computer science, an object can be a <span class="fragment highlight-red">variable</span>, a <span class="fragment highlight-red">data structure</span>, or a <span class="fragment highlight-red">function</span> or a <span class="fragment highlight-red">method</span>, and as such, is a location in memory having a value and possibly referenced by an identifier.</p>
-            <p>In the class-based object-oriented programming paradigm, "object" refers to a <span class="fragment highlight-red">particular</span> instance of a class where the object can be a <span class="fragment highlight-red">combination of variables, functions, and data structures</span>.</p>
+            <p>In the class-based object-oriented programming paradigm, "object" refers to a <span class="fragment highlight-red">particular instance of a class</span> where the object can be a <span class="fragment highlight-red">combination of variables, functions, and data structures</span>.</p>
             <p>In relational database management, an object can be a <span class="fragment highlight-red">table</span> or <span class="fragment highlight-red">column</span>, or an <span class="fragment highlight-red">association between data and a database entity</span> (such as relating a person's age to a specific person).</p>
             <p><a href="https://en.wikipedia.org/wiki/Object_(computer_science)" target="_blank"><small>- Wikipedia on Objects (Computer Science)</small></a></p>
           </section>
           <section data-background-image="img/wrinkling.gif"></section>
           <section>
             <h2>Dictionary</h2>
-            <p>In computer science, an <span class="fragment highlight-red">associative array</span>, <span class="fragment highlight-red">map</span>, <span class="fragment highlight-red">symbol table</span>, or <span class="fragment highlight-red">dictionary</span> is an <span class="fragment highlight-red">abstract data type</span> composed of a collection of (key, value) pairs, such that each possible key appears at most once in the collection.</p>
+            <p>In computer science, an <span class="fragment highlight-red">associative array</span>, <span class="fragment highlight-red">map</span>, <span class="fragment highlight-red">symbol table</span>, or <span class="fragment highlight-red">dictionary</span> is an <span class="fragment highlight-red">abstract data type</span> composed of a collection of key, value pairs, such that each possible key appears at most once in the collection.</p>
             <p><a href="https://en.wikipedia.org/wiki/Associative_array" target="_blank"><small>- Wikipedia on Associative Array</small></a></p>
           </section>
           <section>
             <h2>Key-Value Pairs</h2>
             <pre><code class="python" data-trim contenteditable>
 five_wives = {
+  'Brainy': 'Toast the Knowing',
   'Leader': 'The Splendid Angharad',
   'Funny': 'The Dag',
-  'Brainy': 'Toast the Knowing',
   'Fragile': 'Cheedo the Fragile',
   'Seductive': 'Capable'
 }
@@ -443,10 +444,11 @@ five_wives = {
           </section>
           <section>
             <h2>Hash</h2>
-            <p>In computing, a hash table (<span class="fragment highlight-red">hash map</span>) is a <span class="fragment highlight-red">data structure</span> used to implement an <span class="fragment highlight-red">associative array</span>, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.</p>
+            <p>In computing, a <span class="fragment highlight-red">hash table</span> (<span class="fragment highlight-red">hash map</span>) is a <span class="fragment highlight-red">data structure</span> used to implement an <span class="fragment highlight-red">associative array</span>, a structure that can map keys to values.</p>
             <p><a href="https://en.wikipedia.org/wiki/Hash_table" target="_blank"><small>- Wikipedia on Hash Table</small></a></p>
           </section>
           <section>
+            <h2>Dictionary vs. Hash</h2>
             <p>Dictionary : Dream :: Hash : Reality</p>
           </section>
           <section data-background-image="img/inception.gif"></section>
@@ -454,7 +456,7 @@ five_wives = {
             <h2>Takeaway</h2>
             <p>Dictionaries are</p>
             <p>Hashes are</p>
-            <p>Objects</p>
+            <p>Objects are...</p>
           </section>
           <section data-background-image="img/objects.jpg">
             <h2>Everything is an object!</h2>
@@ -472,7 +474,7 @@ five_wives = {
           </section>
           <section data-background-image="img/fry.jpg">
             <h2 style="color:white; text-shadow: 1px 1px 5px #333; margin-bottom:0;">This is my cat!</h2>
-            <small class="fragment  white-font">console.log("Todo es mejor con " + "cat" + "!");</small>
+            <small class="fragment white-font">console.log("Todo es mejor con " + "cat" + "!");</small>
           </section>
           <section>
             <h2>Recursive Cat!</h2>
@@ -517,7 +519,7 @@ five_wives = {
           </section>
           <section>
             <h2>Document Object Model</h2>
-            <p>The Document Object Model (DOM) is a programming interface for HTML, XML and SVG documents. It provides a structured representation of the document (a tree) and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content.</p>
+            <p>The Document Object Model (DOM) is a programming interface for HTML, XML and SVG documents. It provides a structured representation of the document (a tree) and defines how the structure can be accessed from programs tos change the document structure, style and content.</p>
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank"><small style="text-align: right;">- Mozilla Developer Network on DOM</small></a><p>
           </section>
           <section data-background-image="img/dom.png">
