@@ -59,6 +59,9 @@
 						</p>
 					</section>
           <section>
+            <video data-autoplay src="img/moana.mp4" id="mediaElementID"></video>
+          </section>
+          <section>
             <h2>Software Engineer</h2>
             <img alt="eventbrite logo" src="img/eventbrite.png" style="border:none;">
           </section>
@@ -71,6 +74,8 @@
 					</section>
           <section data-background-image="img/coding.gif">
             <img alt="developer smashing keyboard keys with tongue sticking out" src="img/dev.gif">
+          </section>
+          <section data-background-image="img/elephant.jpg">
           </section>
 				</section>
 
@@ -437,8 +442,9 @@ shark("left");
           </section>
           <section>
             <pre><code class="javascript">
-var Mammal = function() {};
-Mammal.prototype.neoCortex = true;
+var Mammal = function() {
+  this.neoCortex = true;
+};
 
 var Cat = function(name, years) {
   this.name = name;
@@ -447,7 +453,7 @@ var Cat = function(name, years) {
 
 Cat.prototype = new Mammal;
 
-var fryCat = new Cat('Fry', 6);
+var fryCat = new Cat('Fry', 7);
             </code></pre>
             <h3 class="fragment">Cool!</h3>
           </section>
