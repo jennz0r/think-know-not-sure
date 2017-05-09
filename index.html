@@ -446,18 +446,21 @@ shark("left");
           </section>
           <section>
             <pre><code class="javascript">
-var Mammal = function() {
-  this.neoCortex = true;
-};
+class Mammal {
+  constructor() {
+    this.neocortex = true;
+  }
+}
 
-var Cat = function(name, years) {
-  this.name = name;
-  this.years = years;
-};
+class Cat extends Mammal {
+  constructor(name, years) {
+    super();
+    this.name = name;
+    this.years = years;
+  }
+}
 
-Cat.prototype = new Mammal;
-
-var fryCat = new Cat('Fry', 7);
+let fryCat = new Cat('Fry', 7);
             </code></pre>
             <h3 class="fragment">Cool!</h3>
           </section>
