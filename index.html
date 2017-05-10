@@ -381,7 +381,7 @@ shark("left");
           <section>
             <h2>Fibonacci Sequence</h2>
             <pre><code class="javascript">
-  var fibonacci = function (n) {
+  let fibonacci = (n) => {
     return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
   };
             </code></pre>
@@ -391,7 +391,7 @@ shark("left");
             <h2>Factorials<span class="fragment">!</span></h2>
             <p>5! = 5 * 4 * 3 * 2 * 1</p>
             <pre><code class="javascript">
-  var factorial = function (n) {
+  let factorial = (n) => {
     if (n <= 1) {
       return 1;
     } else {
