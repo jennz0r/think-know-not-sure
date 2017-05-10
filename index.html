@@ -157,7 +157,7 @@
 					<section>
 						<h2>Parameter vs. Argument</h2>
 						<pre><code class="javascript" data-trim contenteditable>
-var shark = function (side) {
+let shark = (side) => {
   if (side == "left") {
     sillyDance();
     console.log("LOLOL");
@@ -218,7 +218,7 @@ shark("left");
             <h2>Parameter vs. Argument</h2>
             <pre><code class="javascript" data-trim contenteditable>
 // Here's the parameter!
-var shark = function (side) {
+let shark = (side) => {
   if (side == "left") {
     sillyDance();
     console.log("LOLOL");
@@ -445,6 +445,7 @@ shark("left");
             <p>Therefore, Fry is a mammal.</p>
           </section>
           <section>
+            <h2>Instantiate</h2>
             <pre><code class="javascript">
 class Mammal {
   constructor() {
