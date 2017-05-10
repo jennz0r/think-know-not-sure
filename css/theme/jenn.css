@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 /**
- * Sky theme for reveal.js.
+ * Jenn theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
@@ -13,6 +13,7 @@
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+
 body {
 /*background: #add9e4;
   background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
@@ -31,7 +32,7 @@ body {
 
 ::selection {
   color: #fff;
-  background: #134674;
+  background: #ff5434;
   text-shadow: none; }
 
 .reveal .slides > section, .reveal .slides > section > section {
@@ -277,4 +278,8 @@ body {
 .white-font {
   color: white !important;
   text-shadow: 1px 1px 5px #333 !important;
+}
+
+a.dark-font {
+  color: #1e2b2d !important;
 }
