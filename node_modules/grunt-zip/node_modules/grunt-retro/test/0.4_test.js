@@ -25,7 +25,8 @@ var outline = {
   'A grunt@0.4 plugin': {
     'using grunt-retro': {
       'can have templating on src': true,
-      'can have templating on dest': true
+      'can have templating on dest': true,
+      'can register task without a description': true
     }
   }
 };
@@ -47,5 +48,19 @@ function compareFiles(filename) {
 
 exports['0.4'] = {
   'src-template': compareFiles('src_template.txt'),
-  'dest-template': compareFiles('dest_template.txt')
+  'dest-template': compareFiles('dest_template.txt'),
+  'register-description-less-task': function (test) {
+    // Set up
+    test.expect(1);
+
+    // Assert we can register tasks sans description
+    test.doesNotThrow(function () {
+      grunt.registerTask('my-task', function () {
+        return 'Stub content';
+      });
+    }, 'Grunt cannot register tasks without a description');
+
+    // Callback
+    test.done();
+  }
 };

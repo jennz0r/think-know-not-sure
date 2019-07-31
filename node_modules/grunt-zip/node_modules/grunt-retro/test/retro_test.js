@@ -36,7 +36,8 @@ var outline = {
       'can expand directories': true,
       'can expand files': true,
       'can expand directories with options': true,
-      'can expand files with options': true
+      'can expand files with options': true,
+      'can run against a null source': true
     }
   }
 };
@@ -65,6 +66,7 @@ exports['retro'] = {
   'src-single': compareFiles('src_single.txt'),
   'src-multi': compareFiles('src_multi.txt'),
   'src-expansion': compareFiles('src_expansion.txt'),
+  'src-null': compareFiles('src_null.txt'),
   'dest-compact': compareFiles('dest_compact.txt'),
   'dest-simple': compareFiles('dest_simple.txt'),
   'can register and use helpers': function (test) {

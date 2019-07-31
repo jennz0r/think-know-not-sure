@@ -21,6 +21,10 @@ module.exports = function (grunt) {
       uri: {
         src: ['http://google.com/'],
         dest: 'actual/src_uri.txt'
+      },
+      'null': {
+        src: null,
+        dest: 'actual/src_null.txt'
       }
     },
     'echo-dest': {
